@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 20px #ccc;
+  height: 12vh;
+}
+
+.main-header .main-logo {
+  max-width: 300px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header .main-logo a .img-logo {
+  width: 70px;
+}
+
+.main-header .main-logo a img {
+  width: 100%;
+}
+
+.main-nav .list-nav {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background-color: white;
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid black;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.main-nav .list-nav li {
+  margin: 1.2em 0.9em;
+}
+
+.main-nav .list-nav li a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: black;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.452)), url("../images/banner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.hero-banner .text-hero h1 {
+  font-size: 4.8em;
+  text-transform: capitalize;
+  color: white;
+}
+
+.hero-banner .text-hero p {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 1.2px;
+}/*# sourceMappingURL=style.css.map */
