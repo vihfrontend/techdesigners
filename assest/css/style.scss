@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+:root{
+    --btn-download:#912FAD;
+}
 img{
     width: 100%;
 }
@@ -56,6 +59,7 @@ img{
     display: block;
     background-color: purple;
     margin: 4px 0;
+    transition: all .3s ease-in-out;
 }
 .main-nav .menu-hamburguer span::before{
     content: '';
@@ -64,6 +68,7 @@ img{
     display: block;
     background-color: purple;
     margin: 4px 0;
+    transition: all .3s ease-in-out;
 }
 .main-nav .list-nav{
     position: absolute;
@@ -89,7 +94,17 @@ img{
     text-decoration: none;
     color: black;
 }
-
+.main-nav .menu-hamburguer.alternete span{
+   background-color: transparent;
+}
+.main-nav .menu-hamburguer.alternete span::after{
+    transform: rotate(-135deg);
+    position: relative;
+    top: -6px;
+}
+.main-nav .menu-hamburguer.alternete span::before{
+    transform: rotate(135deg);
+}
 
 .hero-banner{
     display: flex;
@@ -102,6 +117,8 @@ img{
     background-attachment: fixed;
     text-align: center;
     background-position: center;
+    flex-direction: column;
+    position: relative;
 }
 .hero-banner .text-hero h1{
     font-size:clamp(2em,8vw,4em);
@@ -113,4 +130,15 @@ img{
     text-transform: capitalize;
     color: white;
     letter-spacing: 1.2px;
+}
+.hero-banner a{
+    background-color: var(--btn-download);
+    padding: .80em 2em;
+    margin-top: 1.3em;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(.80em,7vw,.90em);
 }

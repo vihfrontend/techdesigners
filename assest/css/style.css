@@ -6,6 +6,10 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --btn-download:#912FAD;
+}
+
 img {
   width: 100%;
 }
@@ -60,6 +64,7 @@ img {
   display: block;
   background-color: purple;
   margin: 4px 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-nav .menu-hamburguer span::before {
@@ -69,6 +74,7 @@ img {
   display: block;
   background-color: purple;
   margin: 4px 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-nav .list-nav {
@@ -99,6 +105,20 @@ img {
   color: black;
 }
 
+.main-nav .menu-hamburguer.alternete span {
+  background-color: transparent;
+}
+
+.main-nav .menu-hamburguer.alternete span::after {
+  transform: rotate(-135deg);
+  position: relative;
+  top: -6px;
+}
+
+.main-nav .menu-hamburguer.alternete span::before {
+  transform: rotate(135deg);
+}
+
 .hero-banner {
   display: flex;
   align-items: center;
@@ -110,6 +130,8 @@ img {
   background-attachment: fixed;
   text-align: center;
   background-position: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .hero-banner .text-hero h1 {
@@ -123,4 +145,16 @@ img {
   text-transform: capitalize;
   color: white;
   letter-spacing: 1.2px;
+}
+
+.hero-banner a {
+  background-color: var(--btn-download);
+  padding: 0.8em 2em;
+  margin-top: 1.3em;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-size: clamp(0.8em, 7vw, 0.9em);
 }/*# sourceMappingURL=style.css.map */
