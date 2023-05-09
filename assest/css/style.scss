@@ -365,4 +365,34 @@ img{
     text-align: center;
     padding: 1.3em;
    }
+
+   .main-header .main-nav .menu-hamburguer{
+    display: none;
+   }
+   .main-header .main-nav .list-nav{
+    opacity: 1;
+    overflow: auto;
+    position: initial;
+    display: flex;
+    border: none;
+   }
+   .main-header .main-nav .list-nav a{
+    font-size: 1.5em;
+    padding: .50em .80em;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+   }
+   .main-header .main-nav .list-nav a:hover{
+    background-color: #51317279;
+   }
+   .main-header .main-logo{
+    max-width: 300px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+.main-header .main-logo a .img-logo{
+    width: 70px;
+}
   }
