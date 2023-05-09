@@ -12,11 +12,27 @@
     --btn-download:#912FAD;
     --text-primary:#715092;
     --text-title:#513172;
+    --text-about:#76708b;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
 }
 img{
     width: 100%;
 }
-
+.up{
+ position: fixed;
+ z-index: 99;
+ right: 0;
+    bottom: 0;
+ 
+}
+.up img{
+    width: 50px;
+}
 .main-header{
     width: 100%;
     display: flex;
@@ -24,6 +40,7 @@ img{
     justify-content: space-between;
     box-shadow: 2px 2px 20px #ccc;
     height: 12vh;
+    scroll-behavior: smooth;
 }
 .main-header .main-logo{
     max-width: 300px;
@@ -80,6 +97,7 @@ img{
     width: 100%;
     list-style: none;
     border-bottom: 1px solid black;
+    z-index: 99;
     opacity: 0;
     overflow: hidden;
     transition: all .3s ease-in-out;
@@ -198,3 +216,45 @@ img{
     top: -20px;
     right: -10px;
 }
+
+
+.main-content .about-box{
+    width: 100%;
+}
+.main-content .about-box .box-align{
+    display: flex;
+    flex-direction: column;
+}
+.main-content .about-box .box-align .img-box{
+    order: -1;
+    max-width: 1200px
+}
+.main-content .about-box .box-align .img-box img{
+  width: 100%;
+}
+.main-content .about-box .box-align .text-box{
+    margin-top: 1.4em;
+    margin: 1.4em 0 0 20px;
+}
+.main-content .about-box .box-align .text-box h2{
+  font-size:clamp(.70em,8vw,.90em);
+  color: #969696;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main-content .about-box .box-align .text-box h1{
+  font-size:clamp(1.3em,8vw,1.8em);
+  color: var(--text-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: .20em 0;
+}
+
+.main-content .about-box .box-align .text-box p{
+    font-size:clamp(.70em,8vw,.90em);
+    color: var(--text-about);
+    text-transform: lowercase;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: .20em 0;
+  }
