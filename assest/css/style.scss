@@ -32,16 +32,54 @@ img{
 .main-header .main-logo a img{
     width: 100%;
 }
+.main-nav .menu-hamburguer{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.main-nav .menu-hamburguer span{
+    width: 20px;
+    height: 2px;
+    display: block;
+    background-color: purple;
+    margin-bottom: 8px;
+}
+.main-nav .menu-hamburguer span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: purple;
+    margin: 4px 0;
+}
+.main-nav .menu-hamburguer span::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: purple;
+    margin: 4px 0;
+}
 .main-nav .list-nav{
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 12vh;
     background-color: white;
     width: 100%;
     list-style: none;
     border-bottom: 1px solid black;
     opacity: 0;
     overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.main-nav .list-nav.open{
+    opacity: 1;
+    overflow: auto;
 }
 .main-nav .list-nav li{
     margin: 1.2em .90em;
@@ -63,9 +101,10 @@ img{
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    background-position: center;
 }
 .hero-banner .text-hero h1{
-    font-size:clamp(2.2em,8vw,3em);
+    font-size:clamp(2em,8vw,4em);
     text-transform: capitalize;
     color: white;
 }
