@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+img{
+    width: 100%;
+}
 
 .main-header{
     width: 100%;
@@ -62,7 +65,7 @@
     text-align: center;
 }
 .hero-banner .text-hero h1{
-    font-size: 4.8em;
+    font-size:clamp(2.2em,8vw,3em);
     text-transform: capitalize;
     color: white;
 }
