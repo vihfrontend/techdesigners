@@ -33,6 +33,16 @@ img{
 .up img{
     width: 50px;
 }
+.whatsapp{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+       bottom: 0;
+    
+   }
+   .whatsapp img{
+    width: 50px;
+   }
 .main-header{
     width: 100%;
     display: flex;
@@ -140,6 +150,9 @@ img{
     flex-direction: column;
     position: relative;
 }
+.hero-banner .text-hero{
+    visibility: hidden;
+}
 .hero-banner .text-hero h1{
     font-size:clamp(2em,8vw,4em);
     text-transform: capitalize;
@@ -198,11 +211,13 @@ img{
     background-color: white;
     padding: .90em 1.2em;
     position: relative;
+    visibility: hidden;
 
 }
 .main-content .cards-box .card-services  .text-card h3{
     color: var(--text-title);
     margin: .60em 0;
+    text-transform: uppercase;
 }
 .main-content .cards-box .card-services  .text-card p{
     color: var(--text-title);
@@ -249,6 +264,9 @@ img{
   font-weight: 600;
   margin: .20em 0;
 }
+.main-content .about-box .box-align .img-box{
+    visibility: hidden;
+}
 
 .main-content .about-box .box-align .text-box p{
     font-size:clamp(.70em,8vw,.90em);
@@ -256,9 +274,14 @@ img{
     text-transform: lowercase;
     font-weight: 600;
     line-height: 1.8;
-    margin: .20em 0;
+    margin: .70em 0;
   }
 
+  .main-content .about-box .box-align .text-box .color-primary{
+    font-size:clamp(.90em,8vw,1.20em);
+    color: #715092;
+    margin-top: 1.2em;
+  }
 
    .rodape-techdesigners{
      width: 100%;
