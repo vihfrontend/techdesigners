@@ -168,6 +168,10 @@ img {
   position: relative;
 }
 
+.hero-banner .text-hero {
+  visibility: hidden;
+}
+
 .hero-banner .text-hero h1 {
   font-size: clamp(2em, 8vw, 4em);
   text-transform: capitalize;
@@ -230,6 +234,7 @@ img {
   background-color: white;
   padding: 0.9em 1.2em;
   position: relative;
+  visibility: hidden;
 }
 
 .main-content .cards-box .card-services .text-card h3 {
@@ -290,13 +295,23 @@ img {
   margin: 0.2em 0;
 }
 
+.main-content .about-box .box-align .text-box .color-prymary {
+  color: #513172;
+  font-size: clamp(0.9em, 8vw, 1.2em);
+  margin-top: 1.4em;
+}
+
+.main-content .about-box .box-align .img-box {
+  visibility: hidden;
+}
+
 .main-content .about-box .box-align .text-box p {
   font-size: clamp(0.7em, 8vw, 0.9em);
   color: var(--text-about);
   text-transform: lowercase;
   font-weight: 600;
-  line-height: 1.8;
-  margin: 0.7em 0;
+  line-height: 2;
+  margin: 1.2em 0;
 }
 
 .main-content .about-box .box-align .text-box .color-primary {
@@ -344,6 +359,12 @@ img {
 
 .rodape-techdesigners .rodape-container .contact h3 {
   text-transform: uppercase;
+}
+
+.rodape-techdesigners .rodape-container .contact .contact-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .rodape-techdesigners .rodape-container .contact .contact-itens .gmail {

@@ -264,6 +264,11 @@ img{
   font-weight: 600;
   margin: .20em 0;
 }
+.main-content .about-box .box-align .text-box .color-prymary{
+    color: #513172;
+    font-size:clamp(.90em,8vw,1.20em);
+    margin-top: 1.4em;
+}
 .main-content .about-box .box-align .img-box{
     visibility: hidden;
 }
@@ -273,8 +278,8 @@ img{
     color: var(--text-about);
     text-transform: lowercase;
     font-weight: 600;
-    line-height: 1.8;
-    margin: .70em 0;
+    line-height: 2;
+    margin: 1.20em 0;
   }
 
   .main-content .about-box .box-align .text-box .color-primary{
@@ -318,6 +323,11 @@ img{
   }
   .rodape-techdesigners .rodape-container .contact h3{
     text-transform: uppercase;
+  }
+  .rodape-techdesigners .rodape-container .contact .contact-itens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .rodape-techdesigners .rodape-container .contact .contact-itens .gmail{
     display: flex;
