@@ -84,6 +84,7 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .container .logo {
@@ -121,8 +122,32 @@ body {
 
 .container-grid .cards-box .box {
   width: 250px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.container-grid .cards-box .text-img {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(14, 14, 14, 0.8784313725);
+  padding: 0.8em 0.9em;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .container-grid .cards-box .box img {
   width: 100%;
+}
+
+.container-grid .cards-box .box:hover .text-img {
+  opacity: 1;
+}
+
+.container-grid .cards-box .text-img span {
+  color: rgb(212, 126, 212);
+}
+
+.container-grid .cards-box .text-img p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

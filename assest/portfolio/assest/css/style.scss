@@ -74,6 +74,7 @@ body{
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 .container .logo{
     font-size: 1.2em;
@@ -106,7 +107,27 @@ body{
 }
 .container-grid .cards-box .box{
     width: 250px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.container-grid .cards-box .text-img{
+    position: absolute;
+    bottom: 0;
+    background-color: #0e0e0ee0;
+    padding: .80em .90em;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 .container-grid .cards-box .box img{
     width: 100%;
+}
+.container-grid .cards-box .box:hover .text-img{
+    opacity: 1;
+}
+.container-grid .cards-box .text-img span{
+    color: rgb(212, 126, 212);
+}
+.container-grid .cards-box .text-img p{
+    color: white;
 }
