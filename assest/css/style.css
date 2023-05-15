@@ -264,6 +264,7 @@ img {
 .main-content .about-box .box-align {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .main-content .about-box .box-align .img-box {
@@ -301,10 +302,6 @@ img {
   margin-top: 1.4em;
 }
 
-.main-content .about-box .box-align .img-box {
-  visibility: hidden;
-}
-
 .main-content .about-box .box-align .text-box p {
   font-size: clamp(0.7em, 8vw, 0.9em);
   color: var(--text-about);
@@ -320,9 +317,21 @@ img {
   margin-top: 1.2em;
 }
 
+.main-content .about-box .box-align .btn-color a {
+  display: block;
+  background-color: var(--btn-download);
+  padding: 0.7em 1.4em;
+  margin: 0.9em 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
 .rodape-techdesigners {
   width: 100%;
   background-color: #212022;
+  position: relative;
 }
 
 .rodape-techdesigners .rodape-container {
@@ -417,11 +426,15 @@ img {
   border-top: 1px solid white;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .main-content .about-box .box-align {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 20px;
+  }
+  .main-content .about-box .box-align .btn-color {
+    display: none;
   }
   .main-content .about-box .box-align .text-box {
     width: 50%;
