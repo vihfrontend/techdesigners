@@ -12,7 +12,7 @@
     --btn-download:#912FAD;
     --text-primary:#715092;
     --text-title:#513172;
-    --text-about:#76708b;
+    --text-about:#29282c;
 }
 html{
     scroll-behavior: smooth;
@@ -234,10 +234,12 @@ img{
     text-transform: uppercase;
 }
 .main-content .cards-box .card-services  .text-card p{
-    color: var(--text-title);
+    color: var(--text-about);
     margin: .60em 0;
     line-height: 1.3;
     text-indent: 10px;
+    line-height: 1.7;
+    font-weight: 500;
 }
 .main-content .cards-box .card-services img{
     width: 40px;
