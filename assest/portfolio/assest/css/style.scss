@@ -8,46 +8,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+:root{
+    --btn-download:#912FAD;
+    --text-primary:#715092;
+    --text-title:#513172;
+    --text-about:#76708b;
+}
 body{
     background-color: rgb(36, 36, 36);
     width: 100%;
     position: relative;
 }
-.arrow{
-    width: 50PX;
-    height: 50px;
-    background-color: white;
-    position: fixed;
-    top: 40%;
-    bottom: -30%;
-    border-top-right-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    transform: translateX(0);
-    z-index: 99;
-}
-.arrow.back{
-    transform: translateX(130px);
-}
-.navbar{
-    width: 30vw;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    transform: translateX(-100%);
-    display: none;
-    transition: all .3s ease-in-out;
-}
-.navbar.open{
-    transform: translateX(0);
-    display: flex;
-}
+
 .container{
     background-color: white;
     width: 100%;
@@ -60,8 +32,18 @@ body{
     z-index: 2;
 }
 .container .logo{
-    font-size: 1.2em;
+    font-size: .70em;
     text-transform: capitalize;
+}
+.container .btn{
+    padding: .70em .80em;
+    border: 1px solid transparent;
+    background-color: var(--btn-download);
+}
+.container .btn a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .hero-card{
     width: 100%;
@@ -70,7 +52,7 @@ body{
 .hero-card .card-grid{
     display: grid;
     min-height: 100vh;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     align-items: center;
     justify-content: center;
 
@@ -79,9 +61,11 @@ body{
     width: 100%;
     display: block;
     margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
 }
 .hero-card .card-grid .card-box .image-box{
-    max-width: 250px;
+    max-width: 350px;
 }
 .hero-card .card-grid .card-box .image-box img{
     width: 100%;

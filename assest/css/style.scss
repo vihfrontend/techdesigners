@@ -158,6 +158,19 @@ img{
     text-transform: capitalize;
     color: white;
 }
+.hero-banner .text-hero h1::after{
+    content: '|';
+    margin-left: 5px;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
 .hero-banner .text-hero p{
     font-size: 1.1em;
     text-transform: capitalize;
