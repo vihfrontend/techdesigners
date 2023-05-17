@@ -11,59 +11,42 @@
 body{
     background-color: rgb(36, 36, 36);
     width: 100%;
+    position: relative;
 }
-.grid-2{
-    width: 100%;
-}
-.navgation{
+.arrow{
+    width: 50PX;
+    height: 50px;
     background-color: white;
+    position: fixed;
+    top: 40%;
+    bottom: -30%;
+    border-top-right-radius: 50%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform: translateX(0);
+    z-index: 99;
+}
+.arrow.back{
+    transform: translateX(130px);
+}
+.navbar{
+    width: 30vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.2em;
-    position: fixed;
-    min-height: 100vh;
-}
-.navgation .user-login{
-    font-size: .90em;
-    margin-top: 20px;
-}
-.navgation .user-login a{
-    text-decoration: none;
-    color: #0e0e0e;
-}
-.navgation .btn-contact{
-    margin: 1.2em 0;
-}
-.navgation .btn-contact .btn{
-    padding: .70em .30em;
-    border: none;
-    background-color: rgb(107, 32, 114);
-    margin: 1.2em 0;
-}
-.navgation .btn-contact .btn a{
-    font-size: .70em;
-    text-transform: uppercase;
-    padding: .20em .30em;
-    color: white;
-    text-decoration: none;
-}
-.navgation .list-case{
-    list-style: none;
-}
-.navgation .list-case li{
-    padding: .90em 0;
-    transform: translateX(0);
+    flex-direction: column;
+    transform: translateX(-100%);
+    display: none;
     transition: all .3s ease-in-out;
 }
-.navgation .list-case li:hover{
-    transform: translateX(20px);
-}
-.navgation .list-case li a{
-    color: #0e0e0e;
-    font-size: 1.1em;
-    text-decoration: none;
+.navbar.open{
+    transform: translateX(0);
+    display: flex;
 }
 .container{
     background-color: white;
@@ -80,54 +63,26 @@ body{
     font-size: 1.2em;
     text-transform: capitalize;
 }
-
-.align{
-    display: flex;
-    margin-top: 20px;
+.hero-card{
+    width: 100%;
+    margin-top: 6em;
 }
-.align .div{
-    width: 20%;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0);
-    display: inline-block;
-}
-.container-grid{
-   min-width: 80%;
-   margin: 0 auto;
-   display: inline-block;
-}
-.container-grid .cards-box{
-    max-width: 100%;
+.hero-card .card-grid{
     display: grid;
+    min-height: 100vh;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+}
+.hero-card .card-grid .card-box{
+    width: 100%;
+    display: block;
     margin: 0 auto;
 }
-.container-grid .cards-box .box{
-    width: 250px;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
+.hero-card .card-grid .card-box .image-box{
+    max-width: 250px;
 }
-.container-grid .cards-box .text-img{
-    position: absolute;
-    bottom: 0;
-    background-color: #0e0e0ee0;
-    padding: .80em .90em;
-    opacity: 0;
-    transition: all .3s ease-in-out;
-}
-.container-grid .cards-box .box img{
+.hero-card .card-grid .card-box .image-box img{
     width: 100%;
-}
-.container-grid .cards-box .box:hover .text-img{
-    opacity: 1;
-}
-.container-grid .cards-box .text-img span{
-    color: rgb(212, 126, 212);
-}
-.container-grid .cards-box .text-img p{
-    color: white;
 }
