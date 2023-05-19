@@ -312,7 +312,7 @@ img{
   }
   .main-content form{
     width: 100%;
-    background-color: #190e24;
+    background-color: #11071b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,10 +338,11 @@ img{
   .main-content form  div input{
     width: 100%;
     padding: 1.20em 1em;
-    border: 2px solid #912FAD;
+    border: 2px solid #ca91da;
     background-color: transparent;
     color: #ecd2f3;
     font-size: 1.2em;
+    border-radius: 8px;
   }
   .main-content form .submit-btn{
     width: 100%;
@@ -354,6 +355,7 @@ img{
     font-weight:800;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-radius: 8px;
   }
    .rodape-techdesigners{
      width: 100%;
