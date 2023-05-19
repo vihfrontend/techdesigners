@@ -310,6 +310,51 @@ img{
     font-size: 1.4em;
     text-transform: uppercase;
   }
+  .main-content form{
+    width: 100%;
+    background-color: #190e24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 .70em;
+  }
+  .main-content legend{
+    color: #ecd2f3;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1.2em 0;
+  }
+  .main-content form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-content form div label{
+    color: #ecd2f3;
+    padding: .50em 0;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+  .main-content form  div input{
+    width: 100%;
+    padding: 1.20em 1em;
+    border: 2px solid #912FAD;
+    background-color: transparent;
+    color: #ecd2f3;
+    font-size: 1.2em;
+  }
+  .main-content form .submit-btn{
+    width: 100%;
+    margin: .80em 0;
+    background-color: #47145f;
+    padding: 1.3em 0;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
    .rodape-techdesigners{
      width: 100%;
      background-color: #212022;
@@ -366,7 +411,8 @@ img{
     align-items: center;
     gap: 10px;
     width: 100%;
-  }ontainer .contact .contact-itens .numbers img{
+  }
+  .rodape-techdesigners .rodape-container .contact .contact-itens .numbers img{
     width: 20px;
   }
   .rodape-techdesigners .rodape-container .contact .contact-itens .address{
@@ -393,7 +439,6 @@ img{
    padding: 1.3em;
    border-top: 1px solid white;
   }
-  .rodape-techdesigners .rodape-c
     
   @media screen and (min-width:750px){
     .main-content .about-box .box-align{
