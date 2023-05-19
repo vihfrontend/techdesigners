@@ -27,6 +27,7 @@ body{
     justify-content: space-between;
     padding: 1.2em .90em;
     align-items: center;
+    gap: 20px;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -45,6 +46,13 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
+.container .back{
+    width: 50px;
+    background-color: transparent;
+    border-radius: 100px;
+    padding: .4em .4em;
+    border: 1px solid var(--text-primary);
+}
 .hero-card{
     width: 100%;
     margin-top: 6em;
@@ -55,6 +63,7 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     align-items: center;
     justify-content: center;
+    margin: 0 30px;
 
 }
 .hero-card .card-grid .card-box{
@@ -173,4 +182,23 @@ body{
    text-align: center;
    padding: 1.3em;
    border-top: 1px solid white;
+  }
+
+
+
+
+  @media screen and (max-width:400px){
+    .container{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.2em .90em;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        flex-direction: column;
+    }
   }
