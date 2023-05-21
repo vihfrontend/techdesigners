@@ -86,7 +86,17 @@
             </div>
             <div class="card-box">
                 <div class="image-box">
-                    <img src="../images/pexels-mateusz-dach-450035.jpg" alt="">
+                    <img src="../images/pdf_20230515_084600_00001.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h2>name design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores culpa similique nam, in ipsam quidem?
+                    </p>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="image-box">
+                    <img src="../images/pdf_20230515_083446_00001.jpg" alt="">
                 </div>
                 <div class="text-box">
                     <h2>name design</h2>
@@ -132,9 +142,16 @@
             </div>
         </section>
         <div class="direitos">
-            <p>&copy;2023 – Todos os direitos reservados – Tech Designer.</p>
+            <p>&copy;<span id="year"></span> – Todos os direitos reservados – Tech Designer.</p>
         </div>
     </footer>
 </body>
-<script src="assest/css/script/menu.js"></script>
+<script>
+    (()=>{
+    let anoatual = document.querySelector('#year');
+    let data = new Date();
+    let ano = data.getFullYear();
+    anoatual.innerHTML = ano;
+})();
+</script>
 </html>

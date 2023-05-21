@@ -11,6 +11,8 @@
   --text-primary:#715092;
   --text-title:#513172;
   --text-about:#29282c;
+  --color-paragrafo: white;
+  --span-color-menu:#926b16;
 }
 
 html {
@@ -175,7 +177,7 @@ img {
 .hero-banner .text-hero h1 {
   font-size: clamp(2em, 8vw, 4em);
   text-transform: capitalize;
-  color: white;
+  color: var(--color-paragrafo);
 }
 
 .hero-banner .text-hero h1::after {
@@ -195,7 +197,7 @@ img {
 .hero-banner .text-hero p {
   font-size: 1.1em;
   text-transform: capitalize;
-  color: white;
+  color: var(--color-paragrafo);
   letter-spacing: 1.2px;
 }
 
@@ -227,7 +229,7 @@ img {
 }
 
 .main-content .main-services .text-services h2 {
-  color: white;
+  color: var(--color-paragrafo);
   font-size: clamp(2em, 8vw, 4em);
   margin: 1.2em 0;
 }
@@ -581,5 +583,15 @@ img {
   }
   .main-header .main-logo a .img-logo {
     width: 70px;
+  }
+  .main-content form .adress {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 750px;
+    gap: 20px;
+  }
+  .main-content form .submit-btn {
+    max-width: 750px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
