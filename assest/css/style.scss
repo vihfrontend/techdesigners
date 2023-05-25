@@ -547,3 +547,12 @@ img{
     width: 100%;
   }
   }
+
+  .prompt-ads{
+    background-color: var(--btn-download);
+    text-align: center;
+    padding: .70em 0;
+    color: white;
+    font-size: clamp(.70em,7vw,1.2em);
+    font-weight: 700;
+  }
