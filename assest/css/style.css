@@ -13,6 +13,7 @@
   --text-about:#29282c;
   --color-paragrafo: white;
   --span-color-menu:#926b16;
+  --background-header: #270f42;
 }
 
 html {
@@ -397,6 +398,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .rodape-techdesigners {
@@ -547,7 +549,7 @@ img {
     margin-top: 1.2em;
   }
   .rodape-techdesigners .rodape-container .contact p {
-    color: var(--btn-download);
+    color: white;
     padding: 0.3em 0;
   }
   .rodape-techdesigners .direitos {

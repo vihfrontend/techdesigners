@@ -15,6 +15,7 @@
     --text-about:#29282c;
     --color-paragrafo: white;
     --span-color-menu:#926b16;
+    --background-header: #270f42;
 }
 html{
     scroll-behavior: smooth;
@@ -53,6 +54,7 @@ img{
     box-shadow: 2px 2px 20px #ccc;
     height: 12vh;
     scroll-behavior: smooth;
+    // background-color: var(--background-header);
 }
 .main-header .main-logo{
     max-width: 300px;
@@ -358,6 +360,7 @@ img{
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 8px;
+    cursor: pointer;
   }
    .rodape-techdesigners{
      width: 100%;
@@ -497,7 +500,7 @@ img{
     margin-top: 1.20em
    }
    .rodape-techdesigners .rodape-container .contact p{
-    color: var(--btn-download);
+    color: white;
     padding: .30em 0;
    }
    
