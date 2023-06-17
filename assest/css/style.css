@@ -79,12 +79,14 @@ img {
   padding: 10px 20px;
   background-color: transparent;
   border: none;
+  position: relative;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .main-nav .menu-hamburguer span {
@@ -118,7 +120,7 @@ img {
 .main-nav .list-nav {
   position: absolute;
   left: 0;
-  top: 12vh;
+  top: 13vh;
   background-color: white;
   width: 100%;
   list-style: none;
@@ -130,8 +132,10 @@ img {
 }
 
 .main-nav .list-nav.open {
+  width: 100%;
   opacity: 1;
   overflow: auto;
+  height: auto;
 }
 
 .main-nav .list-nav li {
