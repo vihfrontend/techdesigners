@@ -55,7 +55,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 2px 2px 20px #ccc;
+  box-shadow: 2px 2px 20px #000000;
   height: 12vh;
   scroll-behavior: smooth;
 }
@@ -75,7 +75,7 @@ img {
   width: 100%;
 }
 
-.main-nav .menu-hamburguer {
+.main-header .main-nav .menu-hamburguer {
   padding: 10px 20px;
   background-color: transparent;
   border: none;
@@ -84,6 +84,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .main-nav .menu-hamburguer span {
