@@ -120,7 +120,7 @@ img {
 .main-nav .list-nav {
   position: absolute;
   left: 0;
-  top: 13vh;
+  top: 25vh;
   background-color: white;
   width: 100%;
   list-style: none;
@@ -485,6 +485,10 @@ img {
 
 .rodape-techdesigners .rodape-container .contact .contact-itens .address img {
   width: 20px;
+}
+
+.rodape-techdesigners .rodape-container .contact .contact-itens .gmail p {
+  font-size: 14px;
 }
 
 .rodape-techdesigners .rodape-container .contact h3 {
