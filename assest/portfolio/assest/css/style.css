@@ -33,7 +33,11 @@ body {
 }
 
 .container .logo {
-  font-size: 0.7em;
+  width: 300px;
+}
+
+.container .logo img {
+  width: 100%;
   text-transform: capitalize;
 }
 

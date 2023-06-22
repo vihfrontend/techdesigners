@@ -32,8 +32,11 @@ body{
     top: 0;
     z-index: 2;
 }
-.container .logo{
-    font-size: .70em;
+.container .logo {
+  width: 300px;
+}
+.container .logo img{
+    width: 100%;
     text-transform: capitalize;
 }
 .container .btn{
