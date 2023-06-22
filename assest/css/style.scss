@@ -57,13 +57,13 @@ img{
     // background-color: var(--background-header);
 }
 .main-header .main-logo{
-    max-width: 300px;
-    margin-top: 12px;
+    max-width: 100px;
+    margin: 0 10px;
     display: flex;
     align-items: center;
 }
 .main-header .main-logo a .img-logo{
-    width: 70px;
+    max-width: 60px;
 }
 .main-header .main-logo a img{
     width: 100%;
@@ -109,7 +109,7 @@ img{
 .main-nav .list-nav{
     position: absolute;
     left: 0;
-    top: 25vh;
+    top: 23vh;
     background-color: white;
     width: 100%;
     list-style: none;
@@ -265,13 +265,15 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    // background-color: #000000;
 }
 .main-content .about-box .box-align .img-box{
     order: -1;
-    max-width: 1800px
+    margin: 1.5em 0;
 }
 .main-content .about-box .box-align .img-box img{
-  width: 100%;
+    width: 300px;
 }
 .main-content .about-box .box-align .text-box{
     margin-top: 1.4em;
@@ -460,20 +462,22 @@ img{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 20px;
+        margin: 1.2em auto;
+        max-width: 1200px;
     }
     .main-content .about-box .box-align .btn-color{
         display: none;
     }
     
     .main-content .about-box .box-align .text-box{
-        width: 50%;
+        width: 70%;
     }
     .main-content .about-box .box-align .img-box{
-     width: 50%;
+        max-width: 30%;
     }
     .main-content .about-box .box-align .img-box img{
         width: 100%;
+        background-color: none;
     }
 
     .rodape-techdesigners .rodape-container{
